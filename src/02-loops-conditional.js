@@ -58,19 +58,19 @@ console.log(outOfRange);
  * const harborContainsBa = isWithinRange("habanana"); // true
  */
 
-/*function stringContainsBa(string) {
-    let tjek = "ba"
+// function stringContainsBa(string) {
+   // let tjek = "ba"
 
-    if (tjek.contains(string)) {
-        return true
-    } else return false
-}
+ //   if (tjek.contains(string)) {
+   //     return true
+//    } else return false
+//}
 
-const bananaContainsBa = stringContainsBa("banana");
-const harborContainsBa = isWithinRange("harbor");
+//const bananaContainsBa = stringContainsBa("banana");
+//const harborContainsBa = isWithinRange("harbor");
 
-console.log(bananaContainsBa);
-console.log(harborContainsBa);
+//console.log(bananaContainsBa);
+//console.log(harborContainsBa);
 //Det her virker ikke. Fandt ikke ud af, hvad der skal indsættes i if funktionen
 
 
