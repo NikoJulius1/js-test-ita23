@@ -8,8 +8,16 @@
  * // person might be { name: 'John Doe', age: 30, city: 'New York' }
  */
 function createPersonObject() {
-    
+    let person = {
+        name: "Nikolaus",
+        age: 21,
+        city: "Frederiksberg",
+    };
+    return person
 }
+
+const person = createPersonObject()
+console.log(person);
 
 
 /**
@@ -23,8 +31,11 @@ function createPersonObject() {
  * // personName will be 'John Doe'
  */
 function getPersonName(person) {
-
+    return person.name;
 }
+
+const personName = getPersonName({ name: 'John Doe', age: 30, city: 'New York' });
+console.log(personName);
 
 
 /**
@@ -40,8 +51,16 @@ function getPersonName(person) {
  *
  */
 function findPersonByName(persons, name) {
-
+    for (let person of persons) {
+        if (person.name === name) {
+            return person;
+        }
+    }
+    return null;
 }
+
+
+
 
 
 /**

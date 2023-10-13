@@ -8,8 +8,10 @@
  * console.log(coolestTeacher); // Benjamin
  */
 function getCoolestTeacher() {
-
-}
+let coolestTeacher = "Benjamin"
+    return coolestTeacher
+};
+console.log(getCoolestTeacher);
 
 /**
  * This function multiplies two numbers and then adds a third number.
@@ -24,8 +26,11 @@ function getCoolestTeacher() {
  * const anotherResult = multiplyAndAdd(-1, 1, 2); // anotherResult will be 1
  */
 function multiplyAndAdd(a, b, c) {
-
+return (a * b) + c;
 }
+
+const sum =  multiplyAndAdd(2,3,5)
+console.log(sum);
 
 /**
  * This function returns the type of the provided variable.
@@ -38,8 +43,16 @@ function multiplyAndAdd(a, b, c) {
  * const anotherResult = determineType(42); // anotherResult will be "number"
  */
 function determineType(value) {
-
+    let type = typeof value
+        return type
 }
+
+const result = determineType("Hello")
+console.log(result);
+
+const anotherResult = determineType(42)
+console.log(anotherResult);
+
 
 /**
  * This function concatenates two strings with a space in between.
@@ -53,8 +66,9 @@ function determineType(value) {
  */
 
 function concatenateStringsWithSpace(a, b) {
-
+return a + " " + b
 }
+
 
 
 /**
@@ -71,6 +85,13 @@ function concatenateStringsWithSpace(a, b) {
  */
 
 function toUpperCaseWithSmiley(str) {
-    
+    let upperCase = str.toUpperCase()
+    return upperCase
+
 }
+const upper = toUpperCaseWithSmiley("hello")
+console.log(upper)
+
+const anotherUpper = toUpperCaseWithSmiley("world").concat(":)")
+console.log(anotherUpper);
 

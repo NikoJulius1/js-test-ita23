@@ -30,8 +30,17 @@ function returnNumbers(start, finish) {
  */
 
 function sumArray(array) {
-
+let sum = 0;
+    for (let i = 0; i < array.length; i++) {
+        sum += array[i];
+    }
+    return sum
 }
+const total = sumArray([1,2,3]);
+console.log(total)
+
+const anotherTotal = sumArray([-1,-2,3]);
+console.log(anotherTotal)
 
 /**
  * This function adds a new element to the end of an array.
@@ -45,5 +54,9 @@ function sumArray(array) {
  * const updatedArray = pushElement(myArray, 4); // updatedArray will be [1, 2, 3, 4]
  */
 function pushElement(arr, elem) {
-    
+   let pushes = myArray.push(elem)
+    return pushes
 }
+const myArray = [1, 2, 3];
+const updatedArray = pushElement(myArray, 4);
+console.log(updatedArray);

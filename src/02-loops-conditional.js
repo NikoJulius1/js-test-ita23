@@ -10,8 +10,17 @@
  */
 
 function isEven(number) {
-    
+    if (number % 2 === 0) {
+        return true
+    } else {
+        return false
+    }
 }
+const results = isEven(4)
+console.log(results);
+
+const anotherResults = isEven(7)
+console.log(anotherResults);
 
 /**
  * This function checks if a number is within a range.
@@ -27,8 +36,15 @@ function isEven(number) {
  */
 
 function isWithinRange(n, min, max) {
-
+if (n >= min && n <= max) {
+    return true
+} else return false
 }
+const inRange = isWithinRange(5,1,10)
+console.log(inRange);
+
+const outOfRange = isWithinRange(15,1,10)
+console.log(outOfRange);
 
 /**
  * This function checks if a string contains the string "ba"
@@ -42,9 +58,23 @@ function isWithinRange(n, min, max) {
  * const harborContainsBa = isWithinRange("habanana"); // true
  */
 
-function stringContainsBa(string) {
+/*function stringContainsBa(string) {
+    let tjek = "ba"
 
+    if (tjek.contains(string)) {
+        return true
+    } else return false
 }
+
+const bananaContainsBa = stringContainsBa("banana");
+const harborContainsBa = isWithinRange("harbor");
+
+console.log(bananaContainsBa);
+console.log(harborContainsBa);
+//Det her virker ikke. Fandt ikke ud af, hvad der skal indsættes i if funktionen
+
+
+
 
 
 
